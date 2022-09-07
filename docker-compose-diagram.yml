@@ -1,0 +1,14 @@
+version: '3.0'
+services:
+  php:
+    image: smeghead7/php-class-diagram
+    container_name: "php-diagram"
+    working_dir: /usr/src
+    volumes:
+      - ./src:/usr/src
+      - ./image:/image
+      - ./log:/log
+    command: >
+      bash -c 'php-class-diagram /usr/src/ 2>&1 |
+      tee /log/log.txt |
+      plantuml -pipe -tpng > /image/class-diagram.png'

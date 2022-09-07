@@ -1,0 +1,9 @@
+{
+    "name": "igarashi.takumi/study_meeting",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}

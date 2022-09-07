@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+
+  phpstan:
+    image: phpstan/phpstan:latest
+    container_name: phpstan
+    volumes:
+      - ./src:/usr/src
+    command: analyze /usr/src

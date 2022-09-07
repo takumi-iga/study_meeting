@@ -1,0 +1,16 @@
+@startuml class-diagram
+  class Sample1 {
+    -name : 
+    -age : 
+  }
+  class Sample2 {
+    -hoby : 
+    -height : 
+  }
+  class Sample3 {
+    -width : 
+    -weight : 
+  }
+  Sample1 <|-- Sample2
+  Sample2 <|-- Sample3
+@enduml
